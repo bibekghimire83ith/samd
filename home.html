@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class = "home">
+	
+<!-- Principal's Section   -->
+<article id="principal">
+	<h4><i>Message From the Principal's Desk...</i></h4> 
+	<img src="C:\Users\BIBEK GHIMIRE\Desktop\mysite1\Demo\templates\Images\img_avatar3.png" style="width:150px;margin:5px 0 0 5px;">
+	<h4><b>Principal</b></h4>
+	<i>Mr. ABC</i>
+	<blockquote style="text-align:justify">
+		Under Tribhuvan University there are various faculties and institutes. Institute of engineering is one of the Institute of Tribhuvan University. Under Institute of Engineering there are four constituent campuses and ten private colleges. Pulchowk Campus is the central campus of the Institute of Engineering. 
+	</blockquote>
+</article>
+
+
+<!--   Search Box   -->
+<section id="container">
+<input type="search"  name="search" placeholder="Search...">
+<!--   Notice Section   -->
+<aside>
+	<h3 style="text-align:center">Notices!!!</h3>
+	
+	<ul class="menu" style="background-color:white;">
+	<li><a href="#">>+2 Admission 2074</a>, Bhadra 16</li><br><br>
+	<li><a href="#">>BE Admission 2074, Reapplication (Third Phase) Notice</a>November 5, 2017</li><br><br>
+	<li?<a href="#">>+2 Admission 2074</a>, Bhadra 16</li><br><br>
+	<li><a href="#">>+2 Admission 2074</a>, Bhadra 16</li><br><br>
+	<li><a href="#">>+2 Admission 2074</a>, Bhadra 16</li><br><br>
+</ul>
+</aside>
+</section>
+
+
+
+
+<!--   SlideShow   -->
+<section class="image" >
+	<img class="mySlides" src="C:\Users\BIBEK GHIMIRE\Desktop\mysite1\Demo\templates\Images\1.jpg" style="width:700px;height:350px;display: block;margin:auto;margin-top:10px">
+	<img class="mySlides" src="C:\Users\BIBEK GHIMIRE\Desktop\mysite1\Demo\templates\Images\2.jpg" style="width:700px;height:350px;display: block;margin:auto;margin-top:10px">
+	<img class="mySlides" src="C:\Users\BIBEK GHIMIRE\Desktop\mysite1\Demo\templates\Images\3.jpg" style="width:700px;height:350px;display: block;margin:auto;margin-top:10px">
+</section>
+
+
+<!--   JavaScript for SlideShow   -->
+<script>
+	var index=0;
+	carousel();
+
+	function carousel(){
+		var i;
+		var slides=document.getElementsByClassName("mySlides");
+		for(i=0;i<slides.length;i++){
+			slides[i].style.display="none";
+		}
+		index++;
+		if(index>slides.length){index=1;}
+		slides[index-1].style.display="block";
+		setTimeout(carousel,3000);
+	}
+</script>
+
+</div>
+
+{% endblock %}

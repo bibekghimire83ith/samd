@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="veiwport" content="width=device-width initial-scale=1">
+	<title>Sainik_Awasiya_Mahavidylaya</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/samd.css')}}">
+</head>
+
+<body>
+
+<!--   Header   -->
+<header>
+	<img id="logo" src="templates/images/Sainik_Awasiya_Mahavidylaya.jpg/" alt="SAMD logo"><div class="samd">
+	<h1 id="samd">Sainik Awasiya Mahavidyalaya</h1>
+	<q class="samd">Imparting knowledge is the greatest service</q></div>
+</header>
+
+
+
+
+<!--   Navigation Bar   -->
+<ul>
+	<li><a href="#" class="active">Home</a></li>
+	<li><a href="#">Academics</a></li>
+	<li><a href="#">Faculty</a></li>
+	<li><a href="#">Admission</a></li>
+	<li><a href="#">Notice board</a></li>
+	<li><a href="#">Quick Links</a></li>
+	<li><a href="#">Contact Us</a></li>
+</ul>
+
+<div>
+	{%block content%}
+	{%endblock%}
+</div>
+
+<!--   Footer Section   -->
+<footer class="footer" id="footer">
+	<p>&copy 2017 SAMD</p>
+</footer>
+
+</body>
+</html>

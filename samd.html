@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="veiwport" content="width=device-width initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="samd.css">
+</head>
+
+<body>
+
+
+
+
+<!--   Header   -->
+<header>
+	<img id="logo" src="Sainik_Awasiya_Mahavidylaya.jpg" alt="SAMD logo"><div class="samd">
+	<h1 id="samd">Sainik Awasiya Mahavidyalaya</h1>
+	<q class="samd">Imparting knowledge is the greatest service</q></div>
+</header>
+
+
+
+
+<!--   Navigation Bar   -->
+<ul>
+	<li><a href="#" class="active">Home</a></li>
+	<li><a href="#">Academics</a></li>
+	<li><a href="#">Faculty</a></li>
+	<li><a href="#">Admission</a></li>
+	<li><a href="#">Notice board</a></li>
+	<li><a href="#">Quick Links</a></li>
+	<li><a href="#">Contact Us</a></li>
+</ul>
+
+
+
+
+<!-- Principal's Section   -->
+<article id="principal">
+	<h4><i>Message From the Principal's Desk...</i></h4> 
+	<img src="img_avatar3.png" style="width:150px;margin:5px 0 0 5px;">
+	<h4><b>Principal</b></h4>
+	<i>Mr. ABC</i>
+	<blockquote style="text-align:justify">
+		Under Tribhuvan University there are various faculties and institutes. Institute of engineering is one of the Institute of Tribhuvan University. Under Institute of Engineering there are four constituent campuses and ten private colleges. Pulchowk Campus is the central campus of the Institute of Engineering. 
+	</blockquote>
+</article>
+
+
+
+
+<!--   Search Box   -->
+<section id="container">
+<input type="search"  name="search" placeholder="Search...">
+<!--   Notice Section   -->
+<aside>
+	<h3 style="text-align:center">Notices!!!</h3>
+	
+	<ul class="menu" style="background-color:white;">
+	<li><a href="#">>+2 Admission 2074</a>, Bhadra 16</li><br><br>
+	<li><a href="#">>BE Admission 2074, Reapplication (Third Phase) Notice</a>November 5, 2017</li><br><br>
+	<li?<a href="#">>+2 Admission 2074</a>, Bhadra 16</li><br><br>
+	<li><a href="#">>+2 Admission 2074</a>, Bhadra 16</li><br><br>
+	<li><a href="#">>+2 Admission 2074</a>, Bhadra 16</li><br><br>
+</ul>
+</aside>
+</section>
+
+
+
+
+<!--   SlideShow   -->
+<section class="image" >
+	<img class="mySlides" src="1.jpg" style="width:700px;height:350px;display: block;margin:auto;margin-top:10px">
+	<img class="mySlides" src="2.jpg" style="width:700px;height:350px;display: block;margin:auto;margin-top:10px">
+	<img class="mySlides" src="3.jpg" style="width:700px;height:350px;display: block;margin:auto;margin-top:10px">
+</section>
+
+
+
+
+<!--   Footer Section   -->
+<footer class="footer" id="footer">
+	<p>&copy 2017 SAMD</p>
+</footer>
+
+
+
+
+<!--   JavaScript for SlideShow   -->
+<script>
+	var index=0;
+	carousel();
+
+	function carousel(){
+		var i;
+		var slides=document.getElementsByClassName("mySlides");
+		for(i=0;i<slides.length;i++){
+			slides[i].style.display="none";
+		}
+		index++;
+		if(index>slides.length){index=1;}
+		slides[index-1].style.display="block";
+		setTimeout(carousel,3000);
+	}
+</script>
+
+
+
+</body>
+</html>
